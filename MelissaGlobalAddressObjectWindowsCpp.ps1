@@ -33,7 +33,7 @@ class ManifestConfig {
 
 ######################### Config ###########################
 
-$RELEASE_VERSION = '2023.Q3'
+$RELEASE_VERSION = '2023.Q4'
 $ProductName = "GLOBAL_DQ_DATA"
 
 # Uses the location of the .ps1 file 
