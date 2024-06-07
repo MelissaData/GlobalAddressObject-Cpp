@@ -29,7 +29,7 @@ class DLLConfig {
 
 ######################### Config ###########################
 
-$RELEASE_VERSION = '2024.Q1'
+$RELEASE_VERSION = '2024.Q2'
 $ProductName = "GLOBAL_DQ_DATA"
 
 # Uses the location of the .ps1 file 
