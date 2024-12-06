@@ -42,7 +42,7 @@ And return
 
 ## Tested Environments
 - Windows 10 64-bit Microsoft Visual C++ 14.34, Powershell 5.1
-- Melissa data files for 2024-Q3
+- Melissa data files for 2024-Q4
 - Nmake 14.34
 - Visual Studio 2022 Developer Command Prompt v17.4.2 64-bit
 
@@ -124,8 +124,8 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-$ git clone https://github.com/MelissaData/GlobalAddressObject-Cpp
-$ cd GlobalAddressObject-Cpp
+git clone https://github.com/MelissaData/GlobalAddressObject-Cpp
+cd GlobalAddressObject-Cpp
 ```
 
 #### Set up Melissa Updater
@@ -162,26 +162,26 @@ Parameters:
 When you have modified the script to match your data location, let's run the script. There are two modes:
 - Interactive 
 
-	The script will prompt the user for an address line 1, address line 2, address line 3, locality, administrative area, postal code, and country, then use the provided inputs to test Global Address Object. For example:
-	```
-	$ .\MelissaGlobalAddressObjectWindowsCpp.ps1
-	```
+    The script will prompt the user for an address line 1, address line 2, address line 3, locality, administrative area, postal code, and country, then use the provided inputs to test Global Address Object. For example:
+    ```
+    .\MelissaGlobalAddressObjectWindowsCpp.ps1
+    ```
     For quiet mode:
     ```
-    $ .\MelissaGlobalAddressObjectWindowsCpp.ps1 -quiet
+    .\MelissaGlobalAddressObjectWindowsCpp.ps1 -quiet
     ```
 - Command Line 
 
-	You can pass an address line 1, address line 2, address line 3, locality, administrative area, postal code, country, and a license string into the ```-addressLine1```, ```-addressLine2```, ```-addressLine3```, ```-locality```, ```-administrativeArea```, ```-postalCode```, ```-country```, and ```-license``` parameters respectively to test Global Address Object. For example:
+    You can pass an address line 1, address line 2, address line 3, locality, administrative area, postal code, country, and a license string into the ```-addressLine1```, ```-addressLine2```, ```-addressLine3```, ```-locality```, ```-administrativeArea```, ```-postalCode```, ```-country```, and ```-license``` parameters respectively to test Global Address Object. For example:
     ```
-    $ .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy" 
-    $ .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy" -license "<your_license_string>"
+    .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy" 
+    .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy" -license "<your_license_string>"
     ```
 
-	For quiet mode:
+    For quiet mode:
     ```
-    $ .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy"  -quiet
-    $ .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy"  -license "<your_license_string>" -quiet
+    .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy"  -quiet
+    .\MelissaGlobalAddressObjectWindowsCpp.ps1 -addressLine1 "US Embassy" -addressLine2 "Via Vittorio Veneto 121" -addressLine3 "00187 Roma RM" -country "Italy"  -license "<your_license_string>" -quiet
     ```
 This is the expected output from a successful setup for interactive mode:
 
@@ -194,8 +194,6 @@ Troubleshooting for errors found while running your program.
 | Error      | Description |
 | ----------- | ----------- |
 | ErrorRequiredFileNotFound      | Program is missing a required file. Please check your Data folder and refer to the list of required files above. If you are unable to obtain all required files through the Melissa Updater, please contact technical support below. |
-| ErrorDatabaseExpired   | .db file(s) are expired. Please make sure you are downloading and using the latest release version. (If using the Melissa Updater, check powershell script for '$RELEASE_VERSION = {version}' and change the release version if you are using an out of date release).     |
-| ErrorFoundOldFile   | File(s) are out of date. Please make sure you are downloading and using the latest release version. (If using the Melissa Updater, check powershell script for '$RELEASE_VERSION = {version}' and change the release version if you are using an out of date release).    |
 | ErrorLicenseExpired   | Expired license string. Please contact technical support below. |
 
 ## Contact Us
